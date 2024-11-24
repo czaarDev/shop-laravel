@@ -24,7 +24,7 @@ class HomeController extends Controller
         $banners  = $this->bannerRepository->all()->groupBy('type');
         $products = $this->productRepository->allToHome()->keyBy('name');
 
-        return view('site.home.index', compact('banners', 'products'));
+        return view('shop.home.index', compact('banners', 'products'));
     }
 
     public function saveLeadNewsletter(Request $request): RedirectResponse

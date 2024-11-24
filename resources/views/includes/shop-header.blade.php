@@ -414,12 +414,12 @@
         </div>
         @guest()
             <div class="ms-5 d-none d-lg-flex gap-3">
-                <button type="button" class="btn btn-primary">
+                <a href="{{route('login')}}" class="btn btn-primary">
                     Login
-                </button>
-                <button type="button" class="btn btn-outline-primary animate-scale">
+                </a>
+                <a href="{{route('register')}}" class="btn btn-outline-primary animate-scale">
                     Criar Conta
-                </button>
+                </a>
             </div>
         @endguest
     </div>
